@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/icofont.css">
+
+    <style>
+        body {
+            background: rgb(42, 36, 109);
+            background: linear-gradient(to right, #121212, #191919);
+            background-size: 200% 100%;
+            background-position: left bottom;
+
+        }
+
+        .container-fluid {
+            padding: 0;
+        }
+
+
+        .a-a {
+            min-height: 50px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .b-a {
+            width: 100%;
+            min-height: 50px;
+        }
+
+        .bg-nav-btn {
+            background-color: #161616;
+        }
+
+        * {
+            color: bisque;
+        }
+
+        .img {
+            position: fixed;
+        }
+
+        .bg-nav-btn:hover {
+            background-color: bisque;
+            color: #161616;
+            cursor: default;
+            border-radius: 5px;
+        }
+
+        #img-1 {
+            width: 50vw;
+            top: 10%;
+            left: 45%;
+            opacity: 0;
+        }
+
+        #img-2 {
+            width: 42vw;
+            top: 20%;
+            left: 45%;
+            opacity: 0;
+        }
+
+        #img-3 {
+            width: 12vw;
+            top: 60%;
+            left: 45%;
+        }
+
+        #img-4 {
+            width: 30vw;
+            top: -10%;
+            left: 75%;
+        }
+
+        #img-5 {
+            width: 30vw;
+            top: 50%;
+            left: 50%;
+        }
+
+        #img-6 {
+            width: 10vw;
+            top: 54%;
+            left: 61%;
+        }
+
+        #img-7 {
+            width: 10vw;
+            top: 29%;
+            left: 61%;
+        }
+
+        #img-8 {
+            width: 7vw;
+            top: 39%;
+            left: 77%;
+        }
+
+        #img-9 {
+            width: 4vw;
+            top: 19%;
+            left: 77%;
+        }
+
+        #img-10 {
+            width: 11vw;
+            top: 15%;
+            left: 88%;
+        }
+
+        #header-btn-group {
+            opacity: 0;
+        }
+    </style>
+
+</head>
+<body>
+<!--<img id="img-1" src="assets/imgs/SVG/Asset%209.svg">-->
+<img class="img" id="img-1" src="assets/imgs/SVG/1.svg">
+<img class="img" id="img-2" src="assets/imgs/SVG/2.svg">
+<img class="img" id="img-3" src="assets/imgs/SVG/3.svg">
+<img class="img" id="img-4" src="assets/imgs/SVG/4.svg">
+<img class="img" id="img-5" src="assets/imgs/SVG/5.svg">
+<img class="img" id="img-6" src="assets/imgs/SVG/6.svg">
+<img class="img" id="img-7" src="assets/imgs/SVG/7.svg">
+<img class="img" id="img-8" src="assets/imgs/SVG/8.svg">
+<img class="img" id="img-9" src="assets/imgs/SVG/9.svg">
+<img class="img" id="img-10" src="assets/imgs/SVG/10.svg">
+
+<!--<div id="image-bg 1"></div>-->
+<div class="container pt-5" id="main-page">
+    <div class="row">
+        <div class="col-md-6 ">
+            <div class="row">
+                <div class="col">
+                    <div class="display-5">
+                        Guess in your mind you are an
+                    </div>
+                    <div class="display-2">
+                        Astronaut
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5" style="height: 96px">
+                <div class="col">
+                    And you lost in space.
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col">
+                    <span class="mr-3">
+                        If you are ready, so hit the
+                    </span>
+                    <button type="button" class="btn btn-outline-danger m-1 p-3" id="play-btn">Play</button>
+                    button and find your friends in space.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container pt-3 d-none" id="game-page">
+    <div class="row">
+        <div class="btn-group" role="group" aria-label="Basic example" id="header-btn-group">
+            <button type="button" class="btn btn-danger btn-lg btn-block d-block mt-2" id="space">
+                <i class="icofont-space"></i> Crypton
+            </button>
+            <button type="button" class="btn btn-danger btn-lg btn-block d-block mt-2" id="hp">
+                <i class="icofont-heart"></i> 100
+            </button>
+            <button type="button" class="btn btn-danger btn-lg btn-block d-block mt-2" id="beaker">
+                <i class="icofont-beaker"></i> 35
+            </button>
+            <button type="button" class="btn btn-danger btn-lg btn-block d-block mt-2" id="money">
+                <i class="icofont-money"></i> 12
+            </button>
+            <button type="button" class="btn btn-danger btn-lg btn-block d-block mt-2" id="water-drop">
+                <i class="icofont-water-drop"></i> 97
+            </button>
+            <button type="button" class="btn btn-danger btn-lg btn-block d-block mt-2" id="hand-grippers">
+                <i class="icofont-hand-grippers"></i> 22
+            </button>
+            <button type="button" class="btn btn-danger btn-lg btn-block d-block mt-2" id="radio-active">
+                <i class="icofont-radio-active"></i> 46
+            </button>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.min.js"
+        integrity="sha512-+VS2+Nl1Qit71a/lbncmVsWOZ0BmPDkopw5sXAS2W+OfeceCEd9OGTQWjgVgP5QaMV4ddqOIW9XLW7UVFzkMAw=="
+        crossorigin="anonymous"></script>
+<script>
+
+    function intro() {
+        $("#img-1").animate({'opacity': 1}, 4000);
+        $("#img-2").animate({'opacity': 1}, 1500);
+        $('#game-page').removeClass('d-none');
+
+    }
+
+    intro();
+
+
+    $('#play-btn').click(function () {
+        $("#main-page,#img-4,#img-6 ,#img-10").fadeOut();
+        $('#img-3,#img-5,#img-6,#img-7,#img-8,#img-9').animate({
+            left: "-=250",
+            width: '+=50',
+        }, 1500);
+        $('#img-2').animate({
+            left: "0",
+            up: "0",
+            width: '100vw',
+            height: '100vh',
+        }, 1500);
+
+        function showpanel() {
+            $('#header-btn-group').animate({opacity: 1}, 2000);
+        }
+
+        setTimeout(showpanel, 1000)
+    });
+</script>
+</body>
+</html>
